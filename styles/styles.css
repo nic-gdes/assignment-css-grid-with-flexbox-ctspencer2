@@ -1,19 +1,20 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
 
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 14pt;
     letter-spacing: 2px;
-    margin: 0 auto;
+    margin: auto auto;
 }
 
 #main {
     display: grid;
     grid-template-rows: repeat(5, auto);
     grid-template-columns: repeat(5, auto);
-    justify-content: space-between;
+    justify-content: center;
     height: 100%;
 }
 
@@ -60,11 +61,20 @@ body {
 
 /* HERO */
 #hero {
-    position: relative;
     display: flex;
     grid-row: 2 / 3;
-    height: 50vh;
-    width: 100vw;
+}
+
+
+#hero-btn {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
 }
 
 #hero::before {
@@ -76,16 +86,117 @@ body {
     background: url(../images/hero.jpeg);
     position: relative;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
-    filter: brightness(50%);
+    filter: brightness(30%);
 }
 
 #title {
     position: absolute;
     color: white;
+    left: 20%;
+    font-size: 24pt;
+    align-items: flex-start;
+    top: 20%;
 }
 
 #title h1 {
     margin-bottom: 0 !important;
+    font-weight: 900;
+    font-size: 4em;
+}
+
+#hero-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+#remax-ass {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: 100;
+}
+
+
+/* ABOUT */
+
+#about {
+    grid-row: 3 / 4;
+    grid-column: 1 / 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: auto 5%;
+    flex-direction: column;
+}
+
+#about-contain {
+    padding: 3rem;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+#about-contain h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#about-img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+#sheri-info {
+    display: flex;
+    font-size: 18pt;
+    font-weight: 300;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+}
+
+
+.double-head {
+    font-size: 2em;
+    font-weight: 700;
+    margin: initial;
+}
+
+.about-col {
+    margin: auto;
+    position: relative;
+    display: block;
+    width: 50%;
+}
+
+
+.about-p {
+    line-height: 2rem;
+}
+
+#remax-info {
+    display: flex;
+    font-size: 18pt;
+    font-weight: 300;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    flex-direction: row-reverse;
+}
+
+.sec-head {
+    display: flex;
+    border-bottom: 5px solid red;
+    flex-direction: column;
 }
